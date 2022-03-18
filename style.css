@@ -1,0 +1,405 @@
+@charset "UTF-8";
+
+/****************************************
+* リセットCSS
+*****************************************/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+    min-width: 1076px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+img {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+div img {
+    vertical-align: top;
+}
+
+a {
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+/****************************************
+* フォント設定
+*****************************************/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+html, body {
+	font-size: 16px;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+/****************************************
+* トップページ ファーストビューのイメージ
+*****************************************/
+#home {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.95) ) fixed,url(./img/IMG_3199.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+}
+
+/****************************************
+* ヘッダー
+*****************************************/
+header {
+	width: 100%;
+	height: 50px;
+}
+
+.header__navgroup {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navgroup li {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 80px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+
+.header__navgroup li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    }
+
+.a__btn {
+    position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+/****************************************
+* トップページ ファーストビューのテキスト
+*****************************************/
+
+.block__main {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.block__main__inner {
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 8% 0;
+    display: flex;
+    align-items: center;
+}
+
+.box-name {
+    overflow: hidden;
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1;
+    font-size: 90px;
+    margin-bottom: 10px;
+}
+.name {
+    color:rgba(255, 255, 255, 0.7);
+    line-height: 1;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/****************************************
+* トップページ About
+*****************************************/
+#about {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    overflow: hidden;  
+}
+
+.about__inner {
+    width: 100%;
+    height: 100%;
+    padding: 120px 10% 0 10%;
+}
+
+.content__header {
+    height: 10%;
+}
+
+.content__header__inner {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.about__content {
+    margin: 50px 0;
+}
+
+.skill__list {
+    font-size: 1.5rem;
+}
+
+.profile {
+    line-height: 1;
+    font-size: 1.2rem;
+    margin: 50px 0; 
+}
+
+.mail {
+    font-size: 1.2rem; 
+}
+
+.icon__list {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.icon__list li {
+    width: 45px;
+}
+
+.laptop {
+    width: 1300px;      
+    position: absolute; 
+    top: 0;
+    left: 50%;            
+}
+
+/****************************************
+* トップページ Project__1
+*****************************************/
+
+#projects__1 {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) );
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:rgba(255, 255, 255);
+    height: 850px;
+    position: relative;
+    overflow: hidden;  
+}
+
+.projects__1__inner {
+    width: 100%;
+    height: 100%;
+    padding: 120px 10% 0 10%;
+}
+
+.projects__1__content {
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.twitter__clone {
+    width: 50%;
+}
+
+.projects__1__dis {
+    width: 45%;
+    margin-bottom: 10%;
+}
+
+.block__twitter {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+.explanation {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 30px 0;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.test {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.link {
+    margin-top: 20px;
+    display: flex;
+}
+
+.link__1 a {
+    background-color: rgb(226,226,226);
+    padding: 13px 27px;
+    margin-right: 45px;
+    font-size: 20px;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+.link__2 a {
+    background-color: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) );
+    border: solid 1px #ffffff;
+    padding: 15px 27px;
+    margin-right: 45px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+/****************************************
+* トップページ Project__2
+*****************************************/
+#projects__2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Noto Sans JP",sans-serif;
+    color:rgb(0, 0, 0);
+    margin: 0px;
+    height: 850px;
+    overflow: hidden;
+}
+
+.projects__2__inner {
+    width: 100%;
+    height: 100%;
+    padding:0 10% 0 10%;
+}
+
+.projects__2__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.netflix {
+    width: 50%;
+}
+
+.projects__2__dis {
+    width: 45%;
+    margin-top: 10%;
+    
+    
+}
+
+.link__3 a {
+    background-color: rgb(255, 255, 255);
+    border: solid 1px #000000;
+    padding: 13px 27px;
+    margin-right: 45px;
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+.link__4 a {
+    background-color: rgb(0, 0, 0);
+    border: solid 1px #ffffff;
+    padding: 15px 27px;
+    margin-right: 45px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+/****************************************
+* トップページ Contacts
+*****************************************/
+#contacts {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9) );
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:rgb(255, 255, 255);
+    margin: 0px;
+    height: 450px;   
+}
+
+i {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f02d";
+    margin-right: 10px;
+}
+
+.title__2 {
+    padding: 150px 0 30px 150px;
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+.contacts__list {
+    padding-left: 150px;
+}
+
+.contacts__list li {
+    font-size: 20px;
+}
+
+.e-mail {
+    margin-top: 20px;
+}
+
+/* [Contacts]のスタイルシート */
+
+#footer {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) );
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Noto Sans JP",sans-serif;
+    color:rgb(255, 255, 255);
+    margin: 0px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* スマホ用のスタイルシート */
+
