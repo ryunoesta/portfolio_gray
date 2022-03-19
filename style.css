@@ -19,7 +19,7 @@ caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 body {
-    /* min-width: 1076px; */
+    min-width: 1076px;
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
@@ -28,7 +28,7 @@ body {
 }
 img {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	top: 0;
 	left: 0;
 	object-fit: cover;
@@ -65,7 +65,7 @@ html, body {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.95) ) fixed,url(./img/IMG_3199.JPG);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    min-width: 1076px;
     height: 1000px;
 }
 
@@ -108,13 +108,6 @@ header {
 	height: 100%;
 	top: 0;
 	left: 0;
-}
-
-/*画面幅480px以下の時*/
-@media screen and (max-width:480px) {
-    #home {
-        width: 100%;
-    }
 }
 
 /****************************************
@@ -172,6 +165,7 @@ h1 {
 
 .content__header {
     height: 10%;
+    margin-bottom: 50px;
 }
 
 .content__header__inner {
@@ -241,6 +235,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-direction: row-reverse;
 }
 
 .twitter__clone {
@@ -301,6 +296,15 @@ h4 {
     color: rgb(255, 255, 255)
 }
 
+/*画面幅480px以下の時*/
+@media screen and (max-width:480px) {
+    .projects__1__content {
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+    }
+}
+
 /****************************************
 * トップページ Project__2
 *****************************************/
@@ -333,8 +337,11 @@ h4 {
 .projects__2__dis {
     width: 45%;
     margin-top: 10%;
-    
-    
+    margin-bottom: 10%;
+}
+
+.block__netflix {
+    margin-bottom: 30px;
 }
 
 .link__3 a {
@@ -355,6 +362,14 @@ h4 {
     font-size: 20px;
     text-decoration: none;
     color: rgb(255, 255, 255)
+}
+
+/*画面幅480px以下の時*/
+@media screen and (max-width:480px) {
+    .projects__2__content {
+        display: inline-block;
+        text-align: center;
+    }
 }
 
 /****************************************
