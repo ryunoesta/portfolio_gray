@@ -19,7 +19,7 @@ caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 body {
-    min-width: 1076px;
+    /* min-width: 1076px; */
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
@@ -108,6 +108,13 @@ header {
 	height: 100%;
 	top: 0;
 	left: 0;
+}
+
+/*画面幅480px以下の時*/
+@media screen and (max-width:480px) {
+    body {
+        width: 100%;
+    }
 }
 
 /****************************************
