@@ -217,8 +217,8 @@ h1 {
     font-size: 1.2rem; 
 }
 
-.submit {
-    color: #000000;
+.about__submit {
+    color: #000;
 }
 
 .icon__list {
@@ -484,6 +484,10 @@ i {
 
 .e-mail {
     margin-top: 10px;
+}
+
+.contacts__submit {
+    color: #fff;
 }
 
 @media screen and (max-width:480px) {
