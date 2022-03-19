@@ -217,6 +217,10 @@ h1 {
     font-size: 1.2rem; 
 }
 
+.submit {
+    color: #000000;
+}
+
 .icon__list {
     width: 120px;
     display: flex;
