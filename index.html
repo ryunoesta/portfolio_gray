@@ -14,11 +14,67 @@
     ---------------------------->
     <div id="home">
         <header>
-            <ul class="header__navgroup">
+            <!-- 画面幅が480px以上の時に表示されるナビ欄 -->
+            <ul class="header__navgroup pc__nav">
+                <!--ナビ-->
                 <li>About<a class="a__btn" href="#about"></a></li>
                 <li>Project<a class="a__btn" href="#projects__1"></a></li>
             </ul>
+
+            <!-- 画面幅が480px以下の時に表示されるナビ欄 -->
+            <ul id="nav" class="header__navgroup sp__nav">
+                <!--ナビ-->
+                <li class="header__navitem">About<a id="nav__about" class="a__btn" href="#about"></a></li>
+                <li class="header__navitem">Project<a id="nav__project" class="a__btn" href="#projects__1"></a></li>
+                <li class="header__navitem">Contacts<a id="nav__contacts" class="a__btn" href="#contacts"></a></li>
+            </ul>
+            <!--モーダル-->
+            <div id="hamburger__modal" class="hamburger__modal"></div>
+            <!--ハンバーガーメニューボタン-->
+            <div id="hamburger__btn" class="hamburger__btn"><i class="fas fa-bars"></i></div>
+            <script>
+                const nav = document.getElementById("nav");
+                const navAbout = document.getElementById("nav__about");
+                const navProject = document.getElementById("nav__project");
+                const navContacts = document.getElementById("nav__contacts");
+
+                //ハンバーガーメニューボタンをクリックしたときに実行される関数
+                document.getElementById('hamburger__btn').addEventListener('click', function() {
+                    //ナビ一覧とモーダルを表示
+                    nav.classList.add("open");
+                    document.getElementById('hamburger__modal').style.display = "block";
+                });
+
+                //ハンバーガーメニューが表示されている時、モーダルがクリックされると実行される関数
+                document.getElementById('hamburger__modal').addEventListener('click', function() {
+                    //ナビ一覧とモーダルを非表示
+                    nav.classList.remove('open');
+                    document.getElementById('hamburger__modal').style.display = "none";
+                });
+                
+                // ハンバーガーメニューが表示されている時、Aboutがクリックされると実行される関数
+                navAbout.addEventListener('click', function() {
+                    //ナビ一覧とモーダルを非表示
+                    nav.classList.remove('open');
+                        document.getElementById('hamburger__modal').style.display = "none";
+                });
+                
+                // ハンバーガーメニューが表示されている時、Serviceがクリックされると実行される関数
+                navProject.addEventListener('click', function() {
+                    //ナビ一覧とモーダルを非表示
+                    nav.classList.remove('open');
+                        document.getElementById('hamburger__modal').style.display = "none";
+                });
+                
+                // ハンバーガーメニューが表示されている時、Contactsがクリックされると実行される関数
+                navContacts.addEventListener('click', function() {
+                    //ナビ一覧とモーダルを非表示
+                    nav.classList.remove('open');
+                        document.getElementById('hamburger__modal').style.display = "none";
+                });
+            </script>
         </header>
+
         <div class="block__main">
             <div class="block__main__inner">
                 <div class="box-name">
@@ -196,7 +252,7 @@
     ---------------------------->
     
     <div id="contacts">
-        <h2 class="title__2"><i class="fa-solid fa-mobile-screen-button"></i>Contacts</h2> 
+        <h2 class="title__2"><i class="fa-solid fa-mobile-screen-button"></i>お問い合わせ</h2> 
         <ul class="contacts__list">
             <li class="mobile">
                 <a class="contacts__submit" href="tel:09075800638">+81 90 7580 0638</a>
