@@ -18,14 +18,14 @@
             <ul class="header__navgroup pc__nav">
                 <!--ナビ-->
                 <li>About<a class="a__btn" href="#about"></a></li>
-                <li>Project<a class="a__btn" href="#projects__1"></a></li>
+                <li>Projects<a class="a__btn" href="#projects__1"></a></li>
             </ul>
 
             <!-- 画面幅が480px以下の時に表示されるナビ欄 -->
             <ul id="nav" class="header__navgroup sp__nav">
                 <!--ナビ-->
                 <li class="header__navitem">About<a id="nav__about" class="a__btn" href="#about"></a></li>
-                <li class="header__navitem">Project<a id="nav__project" class="a__btn" href="#projects__1"></a></li>
+                <li class="header__navitem">Projects<a id="nav__projects" class="a__btn" href="#projects__1"></a></li>
                 <li class="header__navitem">Contacts<a id="nav__contacts" class="a__btn" href="#contacts"></a></li>
             </ul>
             <!--モーダル-->
@@ -35,7 +35,7 @@
             <script>
                 const nav = document.getElementById("nav");
                 const navAbout = document.getElementById("nav__about");
-                const navProject = document.getElementById("nav__project");
+                const navProjects = document.getElementById("nav__projects");
                 const navContacts = document.getElementById("nav__contacts");
 
                 //ハンバーガーメニューボタンをクリックしたときに実行される関数
@@ -60,7 +60,7 @@
                 });
                 
                 // ハンバーガーメニューが表示されている時、Serviceがクリックされると実行される関数
-                navProject.addEventListener('click', function() {
+                navProjects.addEventListener('click', function() {
                     //ナビ一覧とモーダルを非表示
                     nav.classList.remove('open');
                         document.getElementById('hamburger__modal').style.display = "none";
