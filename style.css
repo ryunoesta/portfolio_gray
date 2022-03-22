@@ -70,10 +70,9 @@ html, body {
 * トップページ ファーストビューのイメージ
 *****************************************/
 #home {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.95) ) fixed,url(./img/IMG_3199.JPG);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.267) ) fixed,url(./img/IMG_6643.JPG);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     height: 1000px;
 }
 
@@ -81,6 +80,7 @@ html, body {
 @media screen and (max-width:480px) {
     #home {
         height: 100vh;
+        background-position: center right 17%;
     }
 }
 
