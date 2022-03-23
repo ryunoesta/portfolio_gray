@@ -275,7 +275,8 @@ h1 {
     margin-bottom: 50px;
 }
 
-.content__header__inner {
+
+h2 {
     font-size: 50px;
     font-weight: lighter;
 }
@@ -342,7 +343,7 @@ h1 {
 * トップページ Project__1
 *****************************************/
 
-#projects__1 {
+#project__1 {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) );
     background-size: cover;
     background-repeat: no-repeat;
@@ -352,17 +353,17 @@ h1 {
     overflow: hidden;  
 }
 
-.projects__1__inner {
+.project__1__inner {
     width: 100%;
     height: 100%;
     padding: 120px 10% 0 10%;
 }
 
-.projects__1__content {
+.project__1__content {
     height: 90%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: row-reverse;
 }
 
@@ -370,7 +371,7 @@ h1 {
     width: 50%;
 }
 
-.projects__1__dis {
+.project__1__dis {
     width: 45%;
     margin-bottom: 10%;
 }
@@ -426,14 +427,15 @@ h4 {
 
 /*画面幅480px以下の時*/
 @media screen and (max-width:480px) {
-    #projects__1 {
+    #project__1 {
+        height: 1000px;
         overflow: hidden;
     }
-    .projects__1__content {
+    .project__1__content {
         display: block;
     }
 
-    .projects__1__dis {
+    .project__1__dis {
         width: 100%;
     }
 
@@ -449,23 +451,23 @@ h4 {
 /****************************************
 * トップページ Project__2
 *****************************************/
-#projects__2 {
+#project__2 {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Noto Sans JP",sans-serif;
     color:rgb(0, 0, 0);
     margin: 0px;
-    height: 800px;
+    height: 700px;
     overflow: hidden;
 }
 
-.projects__2__inner {
+.project__2__inner {
     width: 100%;
     height: 100%;
     padding:0 10% 0 10%;
 }
 
-.projects__2__content {
+.project__2__content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -475,7 +477,7 @@ h4 {
     width: 50%;
 }
 
-.projects__2__dis {
+.project__2__dis {
     width: 45%;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -505,19 +507,20 @@ h4 {
 
 /*画面幅480px以下の時*/
 @media screen and (max-width:480px) {
-    #projects__2 {
+    #project__2 {
+        height: 880px;
         overflow: hidden;
     }
 
-    .projects__2__inner {
+    .project__2__inner {
         padding: 100px 10% 0 10%;
     }
 
-    .projects__2__content {
+    .project__2__content {
         display: block;
     }
 
-    .projects__2__dis {
+    .project__2__dis {
         width: 100%;
     }
 
